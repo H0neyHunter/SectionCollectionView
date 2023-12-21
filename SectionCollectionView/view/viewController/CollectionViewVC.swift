@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CollectionViewVC: UIViewController {
     
     @IBOutlet weak var cv: UICollectionView!
     override func viewDidLoad() {
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+extension CollectionViewVC : UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return list.count
     }
